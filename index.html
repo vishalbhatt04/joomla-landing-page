@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joomla Single Sign On (SSO) | SAML SSO | OAuth SSO</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/fd57023465.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section class="j-navbar">
+      <nav class="j-nav">
+        <a href="JavaScript: location.reload(true);"
+          ><img
+            src="img/miniorange-logo.webp"
+            alt="miniOrange Logo"
+            class="j-nav-logo"
+        /></a>
+        <ul>
+          <li><a href="#j-products">Products</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Marketplace</a></li>
+        </ul>
+        <button
+          class="j-nav-btn"
+          onclick="window.location.href = 'https://www.miniorange.com/contact';"
+        >
+          Contact Us
+        </button>
+      </nav>
+    </section>
+
+    <!-- Hero -->
+    <section class="j-hero">
+      <div class="j-hero-flex">
+        <div class="j-hero-title" data-aos="fade-right">
+          <h1>Protect your users with our Joomla plugins</h1>
+          <h2>
+            We provide the
+            <span>Best Login</span>
+            and
+            <span>Security</span> solutions for Joomla in the Market
+          </h2>
+          <div class="j-hero-btn-flex">
+            <a href="#j-products"
+              ><button class="j-hero-btn">Read More</button></a
+            >
+            <a href="https://www.miniorange.com/contact"
+              ><button class="j-hero-btn">Contact Us</button></a
+            >
+          </div>
+        </div>
+        <div class="j-hero-img" data-aos="fade-left">
+          <img src="img/joomla-hero.webp" alt="Security solutions for Joomla" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why miniOrange -->
+    <section class="j-why">
+      <div class="j-why-heading" data-aos="fade-up">
+        <h2>Why Us?</h2>
+      </div>
+      <div class="j-why-flex" data-aos="zoom-in" data-aos-delay="100">
+        <div class="j-why-box">
+          <div class="j-why-box-icon">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="j-why-box-content">
+            <h3>24/7 Customer Support</h3>
+            <p>
+              We are 24/7 available for your query resolutions, on email and
+              phone support. Just
+              <a href="https://www.miniorange.com/contact" class="j-box-link"
+                >one click away</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="j-why-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="j-why-box-icon">
+            <i class="fa-solid fa-handshake-simple"></i>
+          </div>
+          <div class="j-why-box-content">
+            <h3>Strong Domain Expertise</h3>
+            <p>
+              miniOrange is a domain expert in IAM products such as SSO, 2FA,
+              MFA, and custom enterprise solutions.
+            </p>
+          </div>
+        </div>
+        <div class="j-why-box" data-aos="zoom-in" data-aos-delay="300">
+          <div class="j-why-box-icon">
+            <i class="fa-solid fa-thumbs-up"></i>
+          </div>
+          <div class="j-why-box-content">
+            <h3>Custom Development</h3>
+            <p>
+              We offer custom plugins (extensions) that are developed and
+              tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="j-why-box" data-aos="zoom-in" data-aos-delay="400">
+          <div class="j-why-box-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="j-why-box-content">
+            <h3>One Stop Solution</h3>
+            <p>
+              We got all your security needs covered, from 2FA and MFA to SSO,
+              we have got a solution for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="j-products" id="j-products">
+      <div class="j-products-heading" data-aos="zoom-in">
+        <h2>Products</h2>
+      </div>
+      <div class="j-products-brief" data-aos="fade-up" data-aos-delay="100">
+        <a href="#">
+          <div class="j-products-brief-box">
+            <img src="img/SSO.webp" alt="Sigle Sign-On" />
+            <h3>Single Sign-On</h3>
+            <p>
+              Enable seamless login experience to your Joomla websites using
+              your Identity Provider (IdP) with our SSO solution
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="j-products-brief-box">
+            <img src="img/authentication.webp" alt="User Authentication" />
+            <h3>User Authentication</h3>
+            <p>
+              Manage users and groups in one place and sync them to all Joomla
+              websites using our plugins in no time.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="j-products-brief-box">
+            <img src="img/security.webp" alt="Auth Security" />
+            <h3>Auth Security</h3>
+            <p>
+              Verifying the identity of a user, process, or device, often as a
+              prerequisite to allowing access to resources in an information
+              system.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="j-products-container">
+        <div class="j-products-img" data-aos="fade-right">
+          <h3>Single Sign-On</h3>
+          <img src="img/SSO.webp" alt="Single Sign-On" />
+        </div>
+        <div class="j-products-content" data-aos="fade-left">
+          <div class="j-product-tab">
+            <button
+              class="j_tablinks"
+              onclick="openTab(event, 'SAML_SP')"
+              id="defaultOpen"
+            >
+              SAML SP
+            </button>
+            <button class="j_tablinks" onclick="openTab(event, 'SAML_IDP')">
+              SAML IDP
+            </button>
+            <button class="j_tablinks" onclick="openTab(event, 'Oauth_C')">
+              OAuth Client
+            </button>
+            <button class="j_tablinks" onclick="openTab(event, 'Oauth_S')">
+              OAuth Server
+            </button>
+          </div>
+
+          <div id="SAML_SP" class="j_tabcontent">
+            <p>
+              miniOrange offers a single sign-on solution for Joomla. Log in to
+              your Joomla site using Identity Providers that are SAML 2.0
+              compatible. Easily Configure the Identity Provider with the Joomla
+              site by providing only the SAML login URL, IDP Entity ID, and
+              Certificate.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="SAML_IDP" class="j_tabcontent">
+            <p>
+              The Joomla SAML 2.0 IDP enables users on your Joomla site to
+              connect in to your SAML 2.0 compliant Service Provider. We provide
+              assistance for all recognized Service Providers. The Joomla as IdP
+              SAML SSO Plugin functions as a SAML 2.0 Identity Provider that can
+              be set to build trust between the plugin and other SAML 2.0
+              compatible Service Providers.
+            </p>
+
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="Oauth_C" class="j_tabcontent">
+            <p>
+              The OAuth Client Single Sign-On plugin allows users from OAuth 2.0
+              competent OAuth/OpenID Providers to connect in to your Joomla
+              site. OAuth / OpenID Connect Client plugin works with any
+              OAuth/OpenID provider that adheres to the OAuth 2.0 or OpenID
+              Connect 1.0 standard.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="Oauth_S" class="j_tabcontent">
+            <p>
+              Joomla OAuth / OpenID Connect Server (OAuth 2.0 Server) enables
+              Single Sign On to your Joomla client apps. It enables you to
+              utilize Joomla as an OAuth / Openid Connect Server and access
+              OAuth APIs. The Joomla OAuth Server plugin was designed in Joomla
+              so that users may work with OAuth2 compliant clients.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="j-products-container">
+        <div class="j-products-content" data-aos="fade-right">
+          <div class="j-product-tab2">
+            <button
+              class="j_tablinks2"
+              onclick="openTab2(event, 'LDAP')"
+              id="defaultOpen2"
+            >
+              LDAP
+            </button>
+            <button class="j_tablinks2" onclick="openTab2(event, 'SCIM')">
+              SCIM
+            </button>
+            <button class="j_tablinks2" onclick="openTab2(event, 'social')">
+              Social Login
+            </button>
+            <button class="j_tablinks2" onclick="openTab2(event, 'firebase')">
+              Firebase
+            </button>
+          </div>
+
+          <div id="LDAP" class="j_tabcontent2">
+            <p>
+              Integration of Active Directory (AD) with Lightweight Directory
+              Access Protocol (LDAP) for intranet sites. The plugin allows you
+              to log in to your Joomla site using credentials saved on your LDAP
+              server. It enables users to authenticate via NTLM and Kerberos.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="SCIM" class="j_tabcontent2">
+            <p>
+              miniOrange provides a ready to use solution for Joomla User
+              Provisioning using SCIM (System for Cross-domain Identity
+              Management) standard. This solution ensures that you can sync add,
+              update, delete, and deactivate user operations with Joomla using
+              the SCIM User Provisioner plugin.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="social" class="j_tabcontent2">
+            <p>
+              Social Login, Social Sharing plugin is a Joomla plugin that allows
+              your visitors to comment, share, login and register with many
+              Social Media applications like for example Facebook, Twitter,
+              Vkontakte, Google, LinkedIn, WindowsLive, Instagram, Salesforce
+              and Amazon.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="firebase" class="j_tabcontent2">
+            <p>
+              The Firebase Authentication plugin enables users to log in to
+              their Joomla site using their Firebase credentials. You can easily
+              use our Firebase Authentication plugin to allow users to login to
+              your Joomla site using their Firebase credentials.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+        </div>
+        <div class="j-products-img" data-aos="fade-left">
+          <h3>User Authentication</h3>
+          <img src="img/authentication.webp" alt="User Authentication" />
+        </div>
+      </div>
+      <div class="j-products-container">
+        <div class="j-products-img" data-aos="fade-right">
+          <h3>Auth Security</h3>
+          <img src="img/security.webp" alt="Auth Security" />
+        </div>
+        <div class="j-products-content" data-aos="fade-left">
+          <div class="j-product-tab3">
+            <button
+              class="j_tablinks3"
+              onclick="openTab3(event, 'mfa')"
+              id="defaultOpen3"
+            >
+              MFA/2FA
+            </button>
+            <button class="j_tablinks3" onclick="openTab3(event, 'otp')">
+              OTP
+            </button>
+            <button class="j_tablinks3" onclick="openTab3(event, 'rest')">
+              Rest API
+            </button>
+            <button class="j_tablinks3" onclick="openTab3(event, 'web_sec')">
+              Web Security
+            </button>
+          </div>
+
+          <div id="mfa" class="j_tabcontent3">
+            <p>
+              Two Factor Authentication (TFA) for your Joomla site that is both
+              safe and simple to set up. MiniOrange Two Factor Authentication
+              (TFA) offers a second layer of protection to your Joomla accounts,
+              rather than depending just on a password, which may be phished or
+              guessed. It safeguards your Joomla site against hacking and
+              unwanted login attempts.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="otp" class="j_tabcontent3">
+            <p>
+              The Joomla OTP Verification plugin validates users' email and
+              mobile phone numbers by issuing a verification code (OTP) after
+              registration. It eliminates the possibility of a user enrolling on
+              the Joomla site using a fake email address or mobile number. This
+              plugin verifies the existence of the Email Address/Mobile Number
+              as well as the user's ability to access that Email Address/Mobile
+              Number.
+            </p>
+
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="rest" class="j_tabcontent3">
+            <p>
+              The Joomla REST API authentication plugin prevents unwanted access
+              to your Joomla site by verifying various authentication
+              credentials
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+
+          <div id="web_sec" class="j_tabcontent3">
+            <p>
+              Login security, registration security, brute force attack
+              protection, IP monitoring and blacklisting, DOS attack protection,
+              and strong password enforcement are all offered by the network
+              security plugin. We provide enterprise-level protection for your
+              Joomla site, protecting it from hackers and malware.
+            </p>
+            <div class="j-tabcontent-btn">
+              <button>Download</button>
+              <button>Pricing</button>
+              <button>Details</button>
+              <button>Guides</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Local Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

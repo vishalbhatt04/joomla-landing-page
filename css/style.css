@@ -1,0 +1,489 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #616164;
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 12px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.fa-solid {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fe873c !important;
+}
+
+/* Navbar */
+.j-navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.j-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.j-nav-logo {
+  width: 13rem;
+}
+
+.j-nav ul {
+  float: right;
+}
+
+.j-nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.j-nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #616164 !important;
+}
+
+.j-nav-btn {
+  background-color: #0069d9;
+  border-radius: 25px;
+  border: 0px;
+  padding: 0.75rem 1.4rem;
+  font-size: 1.025rem;
+  font-weight: 700;
+  color: white !important;
+  transition: all 0.3s ease;
+}
+
+.j-nav-btn:hover {
+  background-color: #317dec;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+/* Hero */
+.j-hero {
+  background-color: #e7f2ff;
+  padding: 3rem;
+}
+
+.j-hero-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.j-hero-title {
+  width: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.j-hero-title h1 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #616164 !important;
+  margin-bottom: 2rem;
+  line-height: 4rem;
+  letter-spacing: 2px;
+  font-family: "Roboto Slab", sans-serif !important;
+}
+
+.j-hero-title h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #616164 !important;
+}
+
+.j-hero-title span {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #0069d9 !important;
+}
+
+.j-hero-img {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.j-hero-img img {
+  width: 33rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .j-hero-img img {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .j-hero-img img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .j-hero-img img {
+    width: 18rem;
+  }
+}
+
+.j-hero-btn-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.j-hero-btn {
+  background-color: #0069d9;
+  border-radius: 25px;
+  border: 0px;
+  padding: 0.75rem 1.4rem;
+  font-size: 1.025rem;
+  font-weight: 700;
+  color: white !important;
+  transition: all 0.3s ease;
+  margin: 3rem 1.5rem 1rem 0rem;
+}
+
+.j-hero-btn:hover {
+  background-color: #317dec;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+/* Why miniOrange */
+.j-why-heading {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.j-why-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #616164;
+}
+
+.j-why-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.j-why-box {
+  padding: 1rem;
+  margin: 1rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.j-why-box-icon {
+  margin: 1rem;
+}
+
+.j-why-box-content h3 {
+  font-size: 1.5rem;
+}
+
+.j-why-box-content p {
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.j-box-link {
+  text-decoration: none;
+  color: #fe873c !important;
+}
+
+/* Products */
+.j-products {
+  background-color: #f4f6f9;
+}
+
+.j-products-heading {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.j-products-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #616164;
+}
+
+.j-products-brief {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+
+.j-products-brief a {
+  text-decoration: none;
+}
+
+.j-products-brief-box {
+  border: 1px solid #c3d6f2;
+  text-align: center;
+  margin: 1rem 2.5rem;
+  padding: 1rem 1.5rem;
+  width: 20rem;
+  transition: all 0.2s linear;
+}
+
+.j-products-brief-box:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+@media (max-width: 480px) {
+  .j-products-brief-box {
+    margin: 1rem;
+  }
+}
+
+.j-products-brief-box img {
+  width: 60%;
+  margin: 1rem 0rem;
+  opacity: 0.75;
+}
+
+.j-products-brief-box h3 {
+  font-size: 1.5rem;
+}
+
+.j-products-brief-box p {
+  margin: 1rem 0rem;
+}
+
+.j-products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.j-products-img {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.j-products-img h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.j-products-img img {
+  width: 70%;
+  opacity: 0.75;
+}
+
+.j-products-content {
+  width: 45rem;
+  padding: 0rem 1rem 1rem 1rem;
+  margin: 1rem;
+}
+
+/* Style the tab */
+.j-product-tab {
+  overflow: hidden;
+}
+
+.j-product-tab2 {
+  overflow: hidden;
+}
+
+.j-product-tab3 {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.j-product-tab button {
+  background-color: inherit;
+  float: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid rgb(214, 214, 214);
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+.j-product-tab2 button {
+  background-color: inherit;
+  float: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid rgb(214, 214, 214);
+  cursor: pointer;
+  padding: 1rem 3rem;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+.j-product-tab3 button {
+  background-color: inherit;
+  float: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid rgb(214, 214, 214);
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+/* Change background color of buttons on hover */
+.j-product-tab button:hover {
+  background-color: #dae3f0;
+}
+
+.j-product-tab2 button:hover {
+  background-color: #dae3f0;
+}
+
+.j-product-tab3 button:hover {
+  background-color: #dae3f0;
+}
+
+/* Create an active/current tablink class */
+.j-product-tab button.active {
+  border-bottom: 4px solid #0069d9;
+  background-color: #dae3f0;
+}
+
+.j-product-tab2 button.active {
+  border-bottom: 4px solid #0069d9;
+  background-color: #dae3f0;
+}
+
+.j-product-tab3 button.active {
+  border-bottom: 4px solid #0069d9;
+  background-color: #dae3f0;
+}
+
+/* Style the tab content */
+.j_tabcontent {
+  display: none;
+  padding: 1rem;
+  animation: fadeEffect 1.5s;
+  width: 95%;
+  margin-top: 2rem;
+  /* height: 20rem; */
+}
+
+.j_tabcontent2 {
+  display: none;
+  padding: 1rem;
+  animation: fadeEffect 1.5s;
+  width: 95%;
+  margin-top: 2rem;
+  /* height: 20rem; */
+}
+
+.j_tabcontent3 {
+  display: none;
+  padding: 1rem;
+  animation: fadeEffect 1.5s;
+  width: 95%;
+  margin-top: 2rem;
+  /* height: 20rem; */
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.j_tabcontent p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.j_tabcontent2 p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.j_tabcontent3 p {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.j-tabcontent-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.j-tabcontent-btn button {
+  background-color: #0069d9;
+  border-radius: 25px;
+  border: 0px;
+  padding: 0.75rem 1.4rem;
+  font-size: 1.025rem;
+  font-weight: 700;
+  color: white !important;
+  transition: all 0.3s ease;
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.j-tabcontent-btn button:hover {
+  background-color: #317dec;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
