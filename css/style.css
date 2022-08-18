@@ -586,6 +586,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .j-partner-content {
