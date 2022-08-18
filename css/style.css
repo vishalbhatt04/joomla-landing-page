@@ -191,7 +191,7 @@ h6 {
 }
 
 .j-why-heading h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   font-style: normal;
   color: #616164;
@@ -238,7 +238,7 @@ h6 {
 }
 
 .j-products-heading h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 700;
   font-style: normal;
   color: #616164;
@@ -291,9 +291,18 @@ h6 {
   margin: 1rem 0rem;
 }
 
+/* Products Main */
+
 .j-products-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.j-products-container2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   margin: 1rem 0rem;
 }
@@ -314,12 +323,11 @@ h6 {
 }
 
 .j-products-img img {
-  width: 70%;
-  opacity: 0.75;
+  width: 80%;
 }
 
 .j-products-content {
-  width: 45rem;
+  width: 55rem;
   padding: 0rem 1rem 1rem 1rem;
   margin: 1rem;
 }
@@ -327,31 +335,21 @@ h6 {
 /* Style the tab */
 .j-product-tab {
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 .j-product-tab2 {
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 .j-product-tab3 {
   overflow: hidden;
+  margin-top: 2rem;
 }
 
 /* Style the buttons that are used to open the tab content */
 .j-product-tab button {
-  background-color: inherit;
-  float: left;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 4px solid rgb(214, 214, 214);
-  cursor: pointer;
-  padding: 1rem 2rem;
-  transition: 0.3s;
-  font-size: 1.25rem;
-}
-
-.j-product-tab2 button {
   background-color: inherit;
   float: left;
   border-top: none;
@@ -364,6 +362,31 @@ h6 {
   font-size: 1.25rem;
 }
 
+@media (max-width: 650px) {
+  .j-product-tab button {
+    padding: 1rem;
+  }
+}
+
+.j-product-tab2 button {
+  background-color: inherit;
+  float: left;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid rgb(214, 214, 214);
+  cursor: pointer;
+  padding: 1rem 4rem;
+  transition: 0.3s;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 650px) {
+  .j-product-tab2 button {
+    padding: 1rem;
+  }
+}
+
 .j-product-tab3 button {
   background-color: inherit;
   float: left;
@@ -372,9 +395,15 @@ h6 {
   border-right: none;
   border-bottom: 4px solid rgb(214, 214, 214);
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 1rem 3.85rem;
   transition: 0.3s;
   font-size: 1.25rem;
+}
+
+@media (max-width: 650px) {
+  .j-product-tab3 button {
+    padding: 1rem;
+  }
 }
 
 /* Change background color of buttons on hover */
@@ -438,6 +467,7 @@ h6 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -486,4 +516,113 @@ h6 {
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+/* Customers */
+.j-customers {
+  padding: 2rem 0rem;
+  overflow: hidden;
+}
+
+.j-customers-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.j-customers-heading h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #616164;
+}
+
+.j-customers-show {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.j-customers-show {
+  display: flex;
+  animation: scroll 45s linear infinite;
+  margin-bottom: 30px;
+}
+
+.j-customers-show:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-15.625rem * 7.3));
+  }
+}
+
+.j-customers-box {
+  margin: 1rem 1.5rem;
+}
+
+.j-customers-box img {
+  width: 6.5rem;
+  transition: all 0.3s ease;
+}
+
+.j-customers-box img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Partners */
+.j-partner {
+  background-color: #f4f6f9;
+}
+
+.j-partner-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.j-partner-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.j-partner-content h3 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.j-partner-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.j-partner-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.j-partner-content button {
+  margin: 1rem 1.5rem;
+}
+
+.j-partner-img {
+  width: 40rem;
+  padding: 2rem;
+}
+
+.j-partner-img img {
+  width: 70%;
+
 }
