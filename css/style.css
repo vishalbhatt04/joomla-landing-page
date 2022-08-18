@@ -298,6 +298,7 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem 0rem;
+  overflow: hidden;
 }
 
 .j-products-container2 {
@@ -305,6 +306,7 @@ h6 {
   flex-wrap: wrap-reverse;
   justify-content: center;
   margin: 1rem 0rem;
+  overflow: hidden;
 }
 
 .j-products-img {
@@ -619,10 +621,11 @@ h6 {
 
 .j-partner-img {
   width: 40rem;
-  padding: 2rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .j-partner-img img {
   width: 70%;
-
+  margin: 1rem;
 }
