@@ -78,3 +78,12 @@ document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpen2").click();
 
 document.getElementById("defaultOpen3").click();
+
+function toggleMenu() {
+  var x = document.getElementById("j-navmenu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

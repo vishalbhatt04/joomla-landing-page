@@ -27,11 +27,11 @@
 <body>
   <!-- Navbar -->
 
-  <section class="j-navbar">
+  <header class="j-navbar">
     <nav class="j-nav">
       <a href="JavaScript: location.reload(true);"><img src="img/miniorange-logo.webp" alt="miniOrange Logo"
           class="j-nav-logo" /></a>
-      <ul>
+      <ul class="j-nav-links">
         <li><a href="#j-products">Products</a></li>
         <li>
           <a href="https://idp.miniorange.com/miniorange-idp-partners-program/">Partners</a>
@@ -44,8 +44,23 @@
       <button class="j-nav-btn" onclick="window.location.href = 'https://www.miniorange.com/contact';">
         Contact Us
       </button>
+      <button class="j-hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
-  </section>
+    <div id="j-navmenu">
+      <ul class="j-navmenu-links">
+        <li><a href="#j-products">Products</a></li>
+        <li>
+          <a href="https://idp.miniorange.com/miniorange-idp-partners-program/">Partners</a>
+        </li>
+        <li><a href="#j-customers">Customers</a></li>
+        <li>
+          <a href="https://extensions.joomla.org/instant-search/?jed_live%5Bquery%5D=miniorange">Marketplace</a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
   <!-- Hero -->
 
@@ -533,6 +548,61 @@
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="j-footer">
+      <div class="j-column1">
+        <img src="img/miniorange-logo.webp" alt="miniOrange Logo">
+        <p><i class="fa-solid fa-phone"></i>&nbsp; +1 978 658 9387 (US)</p>
+        <p><i class="fa-solid fa-phone"></i>&nbsp; +91 97178 45846 (India)</p>
+        <p><i class="fa-solid fa-envelope"></i>&nbsp; info@xecurify.com</p>
+        <p>STAY CONNECTED</p>
+        <p><i class="fa-brands fa-twitter"></i>&nbsp; <i class="fa-brands fa-facebook-f"></i>&nbsp; <i
+            class="fa-brands fa-linkedin-in"></i>&nbsp; <i class="fa-brands fa-youtube"></i></p>
+      </div>
+      <div class="j-column2">
+        <h4><strong>PRODUCTS</strong></h4>
+        <p><a href="https://miniorange.com/single-sign-on-sso">Single Sign On</a></p>
+        <p><a href="https://www.miniorange.com/identity-broker-service">Identity Brokering</a></p>
+        <p><a href="https://www.miniorange.com/oauth2-server">OAuth / OpenID Connect Server</a></p>
+        <p><a href="https://miniorange.com/two-factor-authentication-(2fa)">Multi Factor Authentication</a></p>
+        <p><a href="https://miniorange.com/fraud">Adaptive Authentication</a></p>
+        <p><a href="https://miniorange.com/user-provisioning">User Provisioning</a></p>
+        <p><a href="https://www.miniorange.com/directory-services">Directory Services</a></p>
+      </div>
+      <div class="j-column2">
+        <h4><strong>SOLUTIONS</strong></h4>
+        <p><a href="https://docs.miniorange.com/saml-solutions">SAML Solutions</a></p>
+        <p><a href="https://docs.miniorange.com/oauth-solutions">OAuth Solutions</a></p>
+        <p><a href="https://docs.miniorange.com/2fa-solutions">2FA Solutions</a></p>
+        <p><a href="https://docs.miniorange.com/mobile-solutions">Mobile Solutions</a></p>
+        <p><a href="https://docs.miniorange.com/directory-integrations">Directory Integrations</a></p>
+        <p><a href="https://docs.miniorange.com/federation-integrations">Federation Integrations</a></p>
+        <p><a href="https://docs.miniorange.com/windows-solutions">Windows Solutions</a></p>
+        <p><a href="https://docs.miniorange.com/sso-connectors">SSO Connectors</a></p>
+        <p><a href="https://docs.miniorange.com/secure-browser-solutions">Secure Browser SSO</a></p>
+        <p><a href="https://docs.miniorange.com/single-sign-on-solutions">View All</a></p>
+      </div>
+      <div class="j-column2">
+        <h4><strong>Why miniorange</strong></h4>
+        <p><a href="https://docs.miniorange.com/success-stories">Our Success Stories</a></p>
+        <p><a href="https://docs.miniorange.com/">Content Library</a></p>
+        <p><a href="https://docs.miniorange.com/demo">Videos</a></p>
+        <p><a href="https://faq.miniorange.com/">FAQs</a></p>
+        <p><a href="https://forum.miniorange.com/">Forum</a></p>
+        <h4><strong>Company</strong></h4>
+        <p><a href="https://www.miniorange.com/overview">Overview</a></p>
+        <p><a href="https://www.miniorange.com/newsandevents">News</a></p>
+        <p><a href="https://www.miniorange.com/partners">Partners</a></p>
+        <p><a href="https://www.miniorange.com/customers">Customers</a></p>
+        <p><a href="https://www.miniorange.com/contact">Contact Us</a></p>
+      </div>
+    </div>
+    <div class="j-footer-end">
+      <p>@ Copyright 2022 miniOrange. All Rights Reserved.</p>
+    </div>
+  </footer>
 
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
