@@ -189,6 +189,7 @@ h6 {
 
 .j-hero-img img {
   width: 35rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -332,6 +333,7 @@ h6 {
 .j-products-brief-box img {
   width: 60%;
   margin: 1rem 0rem;
+  opacity: 0.8;
 }
 
 .j-products-brief-box h3 {
