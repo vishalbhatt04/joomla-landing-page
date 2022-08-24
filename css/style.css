@@ -586,6 +586,14 @@ h6 {
   width: 80%;
 }
 
+.j-customers-hide {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .j-customers-box {
   text-align: center;
   margin: 2rem 2.5rem;

@@ -87,3 +87,15 @@ function toggleMenu() {
     x.style.display = "block";
   }
 }
+
+function toggleCustomers() {
+  var x = document.getElementById("j-customers-hide");
+  var y = document.getElementById("toggleCustomers-btn");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.innerHTML = "Show More";
+  } else {
+    x.style.display = "flex";
+    y.innerHTML = "Show Less";
+  }
+}
