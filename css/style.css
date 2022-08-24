@@ -387,7 +387,6 @@ h6 {
   margin: 1rem;
 }
 
-/* Style the tab */
 .j-product-tab {
   overflow: hidden;
   margin-top: 2rem;
@@ -403,7 +402,6 @@ h6 {
   margin-top: 2rem;
 }
 
-/* Style the buttons that are used to open the tab content */
 .j-product-tab button {
   background-color: inherit;
   float: left;
@@ -461,7 +459,6 @@ h6 {
   }
 }
 
-/* Change background color of buttons on hover */
 .j-product-tab button:hover {
   background-color: #dae3f0;
 }
@@ -474,7 +471,6 @@ h6 {
   background-color: #dae3f0;
 }
 
-/* Create an active/current tablink class */
 .j-product-tab button.active {
   border-bottom: 4px solid #0069d9;
   background-color: #dae3f0;
@@ -490,14 +486,12 @@ h6 {
   background-color: #dae3f0;
 }
 
-/* Style the tab content */
 .j_tabcontent {
   display: none;
   padding: 1rem;
   animation: fadeEffect 1.5s;
   width: 95%;
   margin-top: 2rem;
-  /* height: 20rem; */
 }
 
 .j_tabcontent2 {
@@ -506,7 +500,6 @@ h6 {
   animation: fadeEffect 1.5s;
   width: 95%;
   margin-top: 2rem;
-  /* height: 20rem; */
 }
 
 .j_tabcontent3 {
@@ -515,7 +508,6 @@ h6 {
   animation: fadeEffect 1.5s;
   width: 95%;
   margin-top: 2rem;
-  /* height: 20rem; */
 }
 
 @keyframes fadeEffect {
@@ -574,17 +566,12 @@ h6 {
 }
 
 /* Customers */
-.j-customers {
-  padding: 2rem 0rem;
-  overflow: hidden;
-}
-
 .j-customers-heading {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 3rem;
 }
 
-.j-customers-heading h2 {
+.j-customers-heading h3 {
   font-size: 2.25rem;
   font-weight: 700;
   font-style: normal;
@@ -593,40 +580,50 @@ h6 {
 
 .j-customers-show {
   display: flex;
-  flex-wrap: nowrap;
-}
-
-.j-customers-show {
-  display: flex;
-  animation: scroll 45s linear infinite;
-  margin-bottom: 30px;
-}
-
-.j-customers-show:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-15.625rem * 7.3));
-  }
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .j-customers-box {
-  margin: 1rem 1.5rem;
+  text-align: center;
+  margin: 2rem 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.j-customers-box:hover {
+  transform: scale(1.125);
 }
 
 .j-customers-box img {
   width: 6.5rem;
+}
+
+.j-customers-btn {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.j-customers-btn button {
+  background-color: #0069d9;
+  border-radius: 25px;
+  border: 0px;
+  padding: 0.75rem 1.4rem;
+  font-size: 1.025rem;
+  font-weight: 700;
+  color: white !important;
   transition: all 0.3s ease;
 }
 
-.j-customers-box img:hover {
-  transform: scale(1.1);
+.j-customers-btn button:hover {
+  background-color: #317dec;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 
